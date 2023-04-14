@@ -1,0 +1,98 @@
+$bgcol:#22114e;
+
+@media screen and (max-width: 800px) {
+  /*grid 1 col*/
+  .grid {
+    display: grid;
+    grid-template-columns:auto;
+    background-color: $bgcol;
+    padding: 5px;
+    grid-gap:5px;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  /*grid 2 col*/
+  .grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: $bgcol + #101010;
+  padding: 5px;
+  grid-gap:5px;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  /*grid 3 col*/
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: $bgcol + #202020;
+    padding: 5px;
+    grid-gap:5px;
+  }
+}
+
+
+/*grid item format*/
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    display: square;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end:3; 
+  }
+
+  .grid-item2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:2; 
+  }
+
+  .grid-item3 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start:1;
+    grid-row-end:4; 
+  }
+
+  .grid-item4 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end:2; 
+  }
+
+  .grid-item5 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end:2; 
+  }
+
+  .grid-item6 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end:2; 
+  }
+/*font*/
+
+p{
+  font-family:'Roboto';
+  font-size: $bodyFontSize;
+  color: $bodyFontColor
+}
